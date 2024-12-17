@@ -14,3 +14,6 @@ puts "Okay, #{players[0].name} and #{players[1].name}, let's play Tic-Tac-Toe!"
 
 board.start
 board.print_board
+puts "Pick a spot, #{players[board.current_player_index].name}."
+turn_choice = gets.chomp.to_i
+board.update_board(turn_choice, players[board.current_player_index].token)
