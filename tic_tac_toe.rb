@@ -19,7 +19,7 @@ until board.winner?(current_player.token) || board.tie?
   board.change_player
   current_player = players[board.current_player_index]
   board.print_board
-  puts "#{current_player.name}'s turn"
+  puts "#{current_player.name}'s (#{current_player.token}) turn"
   turn_choice = gets.chomp.to_i
   board.update_board(turn_choice, current_player.token)
 end
