@@ -23,3 +23,5 @@ until board.is_game_end
   board.update_board(turn_choice, current_player.token)
   board.game_end?(current_player.token)
 end
+
+puts "#{current_player.name} is the winner!"
