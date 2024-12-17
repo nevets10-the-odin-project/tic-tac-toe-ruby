@@ -22,4 +22,8 @@ class Board
       puts '' if row == spaces[2]
     end
   end
+
+  def change_player
+    self.current_player_index = current_player_index.zero? ? 1 : 0
+  end
 end

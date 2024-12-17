@@ -19,4 +19,5 @@ until board.is_game_end
   puts "#{players[board.current_player_index].name}'s turn"
   turn_choice = gets.chomp.to_i
   board.update_board(turn_choice, players[board.current_player_index].token)
+  board.change_player
 end
