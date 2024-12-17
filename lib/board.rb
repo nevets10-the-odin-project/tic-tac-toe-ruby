@@ -6,7 +6,7 @@ class Board
 
   def start
     self.spaces = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    self.current_player_index = 0
+    self.current_player_index = 1
     self.is_game_end = false
   end
 

@@ -15,11 +15,11 @@ puts "Okay, #{players[0].name} and #{players[1].name}, let's play Tic-Tac-Toe!"
 board.start
 
 until board.is_game_end
+  board.change_player
   current_player = players[board.current_player_index]
   board.print_board
   puts "#{current_player.name}'s turn"
   turn_choice = gets.chomp.to_i
   board.update_board(turn_choice, current_player.token)
   board.game_end?(current_player.token)
-  board.change_player
 end
