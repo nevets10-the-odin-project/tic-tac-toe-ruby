@@ -26,8 +26,8 @@ end
 
 board.print_board
 
-if board.tie?
-  puts "It's a tie!"
-else
+if board.winner?(current_player.token)
   puts "#{current_player.name} is the winner!"
+else
+  puts "It's a tie!"
 end
