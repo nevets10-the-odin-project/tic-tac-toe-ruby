@@ -24,4 +24,8 @@ until board.is_game_end
   board.game_end?(current_player.token)
 end
 
-puts "#{current_player.name} is the winner!"
+if board.tie?
+  puts "It's a tie!"
+else
+  puts "#{current_player.name} is the winner!"
+end

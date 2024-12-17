@@ -37,7 +37,15 @@ class Board
       if line_check.all?(token)
         self.is_game_end = true
         break
+      elsif flat_spaces.all? { |space| space.is_a?(String) }
+        self.is_game_end = true
+        break
       end
     end
+  end
+
+  def tie?
+    flat_spaces = spaces.flatten
+    flat_spaces.all? { |space| space.is_a?(String) }
   end
 end
