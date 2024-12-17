@@ -2,10 +2,16 @@ require_relative('lib/board')
 require_relative('lib/player')
 
 board = Board.new
+player1 = Player.new('X')
+player2 = Player.new('O')
 
-puts "Let's play Tic-Tac-Toe!"
+puts "What is player 1's name?"
+player1.name = gets.chomp
+
+puts "What is player 2's name?"
+player2.name = gets.chomp
+
+puts "Okay, #{player1.name} and #{player2.name}, let's play Tic-Tac-Toe!"
 
 board.start
-board.print_board
-board.update_board(4, 'X')
 board.print_board
