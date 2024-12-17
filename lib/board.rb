@@ -1,10 +1,11 @@
 # Board Class
 class Board
-  attr_accessor :spaces, :current_player_index
+  attr_accessor :spaces, :current_player_index, :is_game_end
 
   def start
     self.spaces = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     self.current_player_index = 0
+    self.is_game_end = false
   end
 
   def update_board(choice, player_token)
