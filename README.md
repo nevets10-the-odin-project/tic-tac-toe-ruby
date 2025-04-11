@@ -9,7 +9,7 @@ Assignment
 
 Build a tic-tac-toe game on the command line where two human players can play against each other and the board is displayed in between turns.
 
-## Post-project review
+## Post project review
 
 It turned out messier than I was anticipating, but it mostly works. Funnily enough, I wrote down the two win conditions when I was brainstorming, but I didn't code them as separate checks the first time for some reason. I think it's good enough as an early Ruby project.
 
